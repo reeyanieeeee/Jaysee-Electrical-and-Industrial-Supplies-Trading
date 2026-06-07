@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JAYSEE ELECTRICAL & INDUSTRIAL SUPPLIES TRADING | About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+ <script src="https://kit.fontawesome.com/50bdd3bd63.js"crossorigin="anonymous">
+ </script>
+</head>
+<body>
+
+<div id="page-transition"></div>
+
+ <!-- NAV BAR -->
+<div class="header">
+  <div class="left">
+    <a href="index.html"><img src="logo.png" class="logo"></a>
+    <div class="company">
+      JAYSEE ELECTRICAL & INDUSTRIAL SUPPLIES TRADING
+    </div>
+    <!-- ADD THIS BUTTON -->
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <!-- ADD THIS DROPDOWN -->
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a href="index.html" onclick="selectLink(this)">HOME</a>
+    <a href="about.html" onclick="selectLink(this)">ABOUT US</a>
+    <a href="products.html" onclick="selectLink(this)">PRODUCTS</a>
+    <a href="contact.html" onclick="selectLink(this)">CONTACT</a>
+  </div>
+</div> 
+
+
+<!-- HERO / HEADER -->
+<section class="about-us-hero">
+  <h1>ABOUT US</h1>
+</section>
+
+<section class="about">
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="about-left">
+      <h2>Your Partner in any Industry</h2>
+
+      <div class="image-card">
+        <img src="aboutpic.jpg" alt="Team meeting">
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
+      <p>
+        <strong>Jaysee Electrical & Industrial Supplies Trading</strong> is a dynamic enterprise with specialty in superior quality electrical and 
+        industrial supplies for a wide variety of business sectors. With dedication to reliability and customer satisfaction at the core, 
+        Jaysee provides a comprehensive range of supplies and equipment designed to cater to the very specific needs of its customers—whether 
+        construction sites and manufacturing plants, commercial outfits and service providers.
+      </p>
+      <p>
+        The firm takes pride in its dedication to providing high quality products, professional assistance, and fair prices so that every 
+        client is provided with effective solutions for their operational needs. Whether you require electrical parts, marine and industrial equipment, 
+        or specialized materials, Jaysee Electrical & Industrial Supplies Trading is your best bet for excellence and value in the market.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- VALUES SECTION -->
+<section class="values-about">
+
+  <!-- VISION -->
+  <div class="v-section">
+    <h2>OUR VISION</h2>
+    <p>
+      To be a premier and reliable source of electrical and industrial
+      supplies in the area—known for our dedication to quality,
+      innovation, and service excellence. We see ourselves enabling
+      industries with reliable solutions that fuel growth, safety,
+      and long-term success.
+    </p>
+  </div>
+
+  <!-- MISSION -->
+  <div class="m-section">
+    <h2>OUR MISSION</h2>
+    <p>
+      At <strong>JAYSEE</strong> Electrical and Industrial Supplies Trading,
+      our purpose is to deliver dependable, high quality electrical,
+      marine, and industrial products that drive progress and enable
+      the success of our customers. We are committed to delivering
+      outstanding service, creative solutions, and trusted partnerships
+      that power industries and build a safer, more efficient tomorrow.
+    </p>
+  </div>
+
+</section>
+
+<!-- WHY SECTION -->
+<section class="why">
+  <h2>WHY CHOOSE US</h2>
+
+  <div class="carousel">
+    <div class="cards" id="cards">
+
+      <div class="card">
+        <div class="icon">
+        <img src="icon1.png" alt="badge icon">
+        <h3>QUALITY</h3>
+        <p>We provide high-quality products that build customer trust and long-term reliability.</p>
+        <div class="timer"></div>
+        </div>
+      </div>
+
+      <div class="card active">
+        <div class="icon">
+        <img src="icon3.png" alt="user-friendly icon">
+        <h3>USER - FRIENDLY</h3>
+        <p>Easy to learn, use, and work with for a smooth customer experience.</p>
+        <div class="timer"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"> 
+        <img src="icon4.png" alt="service icon">
+        <h3>SERVICE</h3>
+        <p>We consistently meet customer needs and expectations through reliable service.</p>
+        <div class="timer"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"> 
+        <img src="icon2.png" alt="digital icon">
+        <h3>DIGITAL</h3>
+        <p>Our digital presence allows customers to reach us anytime from anywhere.</p>
+        <div class="timer"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="controls">
+      <button id="prev">←</button>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <button id="next">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- STORY SECTION -->
+<section class="story">
+    <div class="story-content">
+        <div class="story-text">
+            <h2>OUR STORY</h2>
+            <p>
+                Jaysee Electrical and Industrial Supplies Trading was founded from an idea shaped by years of experience in the shipping industry. Ray Anthony Sia, a former purchaser for a shipping company, developed deep knowledge of the various supplies needed for ships and maritime operations.
+                He realized that many of these items—such as electrical wires, industrial hoses, and electrical equipment—were also widely needed by individuals and other industries. Since most suppliers offered only specific products, buyers often had to visit multiple stores to complete their purchases.
+                To solve this challenge, he established Jaysee Electrical and Industrial Supplies Trading as a one-stop shop where customers can conveniently find a wide range of materials and equipment in one place.
+            </p>
+        </div>
+        <div class="story-image">
+            <img src="storypic.jpg" alt="Shipping Port">
+        </div>
+    </div>
+</section>
+
+<!-- TRANSACTION SECTION -->
+<section class="transaction">
+        <div class="transaction-content">
+            <h2>ORDER&nbsp;&&nbsp;TRANSACTION&nbsp;PROCESS</h2>
+            <p>
+                At present, Jaysee Electrical and Industrial Supplies Trading operates without
+                a physical store or warehouse, with its office currently based at a residence
+                in Balagtas, Bulacan. As a growing business, orders are handled directly through
+                email and other contact methods instead of online shopping platforms. Once a
+                client places an order, the requested items are arranged and delivered promptly—
+                similar to a direct order-and-deliver setup that ensures customers receive their
+                supplies efficiently.
+            </p>
+        </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <img src="logo.png" alt="Jaysee Logo" id="logo">
+      <div class="brand-text">
+        <p class="title">
+          JAYSEE ELECTRICAL & INDUSTRIAL <br> SUPPLIES TRADING
+        </p>
+        <p>
+          a dynamic enterprise specializing in high-quality electrical and
+          industrial supplies for a wide range of industries and businesses.
+        </p>
+      </div>
+    </div>
+
+    <!-- COLUMNS -->
+    <div class="footer-columns">
+
+      <!-- LOCATION -->
+      <div class="column">
+        <h1>LOCATION</h1>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5>
+            A061B Milagrosa St., Borol 1st<br>
+            Balagtas, Bulacan, Philippines
+          </h5>
+        </div>
+        <p class="sub-text">
+          Office address only. Orders and inquiries are handled through email
+          and other contact channels.
+        </p>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="column">
+        <h1>CONTACT</h1>
+
+        <div class="info-item">
+          <i class="fa-brands fa-facebook-f"></i>
+          <h5>
+            <a href="https://www.facebook.com/profile.php?id=61574995744291" class="plain">Jaysee Electrical & Industrial<br>Supplies Trading</a>
+          </h5>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <h5>jayseetrading@gmail.com</h5>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <h5>0976 136 6317</h5>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-brands fa-viber"></i>
+          <h5>0916-7981174</h5>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="column">
+        <h1>NAVIGATION</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <h6>
+        © 2026 Jaysee Electrical & Industrial Supplies Trading.<br>
+        All rights reserved.
+      </h6>
+
+      <div class="legal">
+        <h6><a href="disclaimer.html">Disclaimer</a></h6>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
