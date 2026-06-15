@@ -74,7 +74,7 @@ body {
 }
 
 .logo {
-  width: 85px;
+  width: 75px;
   margin-right: 20px;
   margin-left: 10px;
   margin-top: -20px;
@@ -129,15 +129,17 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* sits just below the header */
-  left: 0;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 260px;
   background: white;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  border-radius: 0 0 12px 12px;
+  border-radius: 12px;
   z-index: 999;
   overflow: hidden;
 }
+
 .dropdown-menu a {
   display: block;
   padding: 14px 24px;
@@ -295,6 +297,7 @@ body {
   line-height: 1.2;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  margin-top: -10px;
   text-shadow: black 10px 5px 10px;
 }
 
@@ -302,6 +305,7 @@ body {
   font-size: 22px;
   line-height: 1.6;
   margin-bottom: 40px;
+  margin-top: -5px;
   text-shadow: black 10px 5px 10px;
 }
 
@@ -1911,14 +1915,19 @@ h5 {
 /* MOBILE (max width: 768px) */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 750px;
+}
 
-  .left {
-    flex-direction: column;
-  }
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
   .logo {
     margin: 0;
@@ -1926,21 +1935,12 @@ h5 {
   }
 
   .company {
-    font-size: 14px;
-    margin-top: 10px;
+    display: none;
   }
 
-  .nav {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav a {
-    margin: 5px;
-    padding: 8px 15px;
-    font-size: 14px;
+  .hamburger {
+    display: flex !important;
+    margin-left: 0;
   }
 
   .hero {
@@ -2087,6 +2087,7 @@ h5 {
 
   .footer-container {
     padding: 50px 20px;
+    width: 760px;
   }
 
   /* BRAND STACK */
@@ -2355,7 +2356,7 @@ h5 {
 
   /* FORM */
   .form {
-    padding: 20px;
+    padding: 10px 5px;
     border-radius: 20px;
   }
 
@@ -2415,9 +2416,8 @@ h5 {
     font-size: 12px;
   }
 
-  .nav a {
-    padding: 6px 12px;
-    font-size: 12px;
+  .header {
+    width: auto;
   }
 
   .hero {
@@ -2530,6 +2530,7 @@ h5 {
 
   .footer-container {
     padding: 40px 15px;
+    width: auto;
   }
 
   /* BRAND */
@@ -2574,6 +2575,7 @@ h5 {
 
   .about-us-hero {
     height: 100px;
+    width: auto;
   }
 
   .about-us-hero h1 {
@@ -2746,11 +2748,6 @@ h5 {
     font-size: 14px;
     text-align: center;
  }
- 
-  .nav a {
-   font-size: 12px;
-   padding: 6px 12px;
- }
 
  .contact {
     padding: 20px 30px;
@@ -2782,7 +2779,7 @@ h5 {
 
   /* FORM */
   .form {
-    padding: 10px 7px;
+    padding: 10px 5px;
     min-width: 100%;
   }
 
@@ -2801,7 +2798,7 @@ h5 {
   }
 
   .input-group {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   form textarea {

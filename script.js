@@ -16,6 +16,9 @@ function selectLink(el) {
 document.addEventListener('click', function(e) {
   const menu = document.getElementById('dropdownMenu');
   const btn = document.getElementById('hamburgerBtn');
+
+  if (!menu || !btn) return;
+
   if (!menu.contains(e.target) && !btn.contains(e.target)) {
     menu.style.display = 'none';
   }
@@ -226,6 +229,9 @@ const checkboxes = document.querySelectorAll('.pop-trigger');
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("contactForm");
+
+    // Only run this code on the Contact page
+    if (!form) return;
 
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
