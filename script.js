@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    emailjs.init("-ljApwiUqG8JQk21q");
+    emailjs.init("CEyCAVLWm4dRSm6fg");
 
     // NO NUMBERS IN NAME 
     nameInput.addEventListener("input", function () {
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         //SEND EMAIL 
-        emailjs.send("service_dfupro9", "template_tth604y", {
+        emailjs.send("service_ayotvjj", "template_1b26lil", {
             from_name: nameInput.value,
             from_email: emailInput.value,
             message: messageInput.value

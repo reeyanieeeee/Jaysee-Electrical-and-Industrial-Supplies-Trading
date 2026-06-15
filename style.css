@@ -1377,7 +1377,7 @@ textarea.error {
 /*FOOTER */
 /* FOOTER CONTAINER */
 .footer-container {
-  max-width: 1420px;
+  max-width: 10000px;
   margin: 0 auto;
   padding: 70px 50px;
   background-color: white;
